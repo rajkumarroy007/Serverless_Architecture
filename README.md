@@ -15,9 +15,9 @@
 <li> Select Lambda - create function select Author from scratch</li>
 <li> Give myFunctionName choose Runtime pytho 3.11</li>
 <li> In Change default execution select "Use a existing role "rajkumar-lambda"</li>
-<li> In code update  </li>
-<li> </li>
-<li> </li>
+<li> In code tab in Lambda function upload "EC2-Stop-Start-Tag-Lambda and Boto3.zip" from github  </li>
+<li>Click on Deloy for deploying Lambda function to trigger click on test </li>
+<li> Refer below screenshot for more details</li>
 <li> </li>
 
 
