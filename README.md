@@ -1,7 +1,7 @@
 # Serverless_Architecture
 
-<h1>Automated Instance Management Using AWS Lambda and Boto3 </h1>h1>
-<li>Automate the stopping and starting of EC2 instances based on tags</li>
+<h1>Automated Instance Management Using AWS Lambda and Boto3 </h1>
+<li>Automate the stopping and starting of EC2 instances based on tags (Rajkumar-Auto-Start & Rajkumar-Auto-Stop)</li>
 <li> Create two EC2 instances</li>
 <li> Edit the tag with  </li>
 <li> Go to instance Tags tabs and manage tags </li>
