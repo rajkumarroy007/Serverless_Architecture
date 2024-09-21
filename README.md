@@ -68,7 +68,7 @@
 <li> Lambda Function - Create a Lambda function in AWS and assign the IAM role -   </li> 
 <li> Open IAM IAM Dashboard select Roles</li>
 <li> To create Role select create role choose AWS service then Lambda  </li>
-<li> To update the permission - select Add permissions "AmazonEC2FullAccess" </li>
+<li> To update the permission - select Add permissions "AmazonS3FullAccess" </li>
 <li> To create Role "Name, review, and create" give Role name "rajkumar-lambda"  </li>
 <li> Now create Lambda function assign with role "rajkumar-lambda"</li>
 <li> Select Lambda - create function select Author from scratch</li>
@@ -93,18 +93,37 @@
 ![SNS notifications received](https://github.com/user-attachments/assets/fda31fb3-30a1-4f30-b499-92ac0450c243)
 ![SNS notifications_Subscription confirmed](https://github.com/user-attachments/assets/ba111159-04c9-4bb7-b897-9e8ef79fdd32)
 
+<h1>Monitor EC2 Instance State Changes Using AWS Lambda, Boto3, and SNS</h1>
+
+<li> Create an SNS Topic- Navigate to the SNS Dashboard in the AWS console. </li> 
+<li>Choose Topics > Create topic. </li> 
+<li>Choose a type (Standard or FIFO, but for this case, Standard is fine). </li> 
+<li>Enter a name for your topic (e.g., rajkumar-EC2StateChangeTopic). </li> 
+<li> Click Create topic</li> 
+<li> Subscribe to the SNS Topic: After creating the topic, click on the topic name to view its details.</li> 
+<li>Set Protocol to Email, and enter your email address as the Endpoint </li> 
+<li>Click Create subscription. </li> 
+<li>Create Lambda IAM Role: </li> 
+<li> To create Role select create role choose AWS service then Lambda  </li>
+<li> To update the permission - select Add permissions "AmazonSNSFullAccess" </li>
+<li> To create Role "Name, review, and create" give Role name "rajkumar-lambda"  </li>
+<li> Now create Lambda function assign with role "rajkumar-lambda"</li>
+<li> Select Lambda - create function select Author from scratch</li>
+<li> Give myFunctionName choose Runtime pytho 3.11</li>
+<li> In Change default execution select "Use a existing role "rajkumar-lambda"</li>
+<li>Create function- rajkumar-ec2-monitor-state </li> 
+<li> Choose Python 3.x as the runtime.</li> 
+<li> Under Permissions, select Use an existing role, and choose the role you just created.</li> 
+<li> Update the lambda function script "Monitor EC2 Instance State Changes Using AWS Lambda_function.py"</li> 
+<li> Test the result as per below screenshot </li> 
 
 
-<li> </li> 
-<li> </li> 
-<li> </li> 
-<li> </li> 
-<li> </li> 
-<li> </li> 
-<li> </li> 
-<li> </li> 
-<li> </li> 
-<li> </li> 
-<li> </li> 
-<li> </li> 
+![Amazon SNS confirmed](https://github.com/user-attachments/assets/f9c8f260-34bb-42fd-94c5-43e3f517bf64)
+![Create Subscription_pending confirmation](https://github.com/user-attachments/assets/7a7ca409-cb30-426b-a9b8-3d6573efed48)
+![EC2 Instance State Change Notification](https://github.com/user-attachments/assets/e9db38b1-7344-4b1d-8b43-fe9ffb7e5783)
+![Instance status SNS notification](https://github.com/user-attachments/assets/b058028a-cb38-4f2f-b990-a905183bcf2e)
+![Lambda script](https://github.com/user-attachments/assets/a3332e23-7719-4d72-b46d-29d7e7c92818)
+![SNS_subscription confirmed](https://github.com/user-attachments/assets/bbd65f3c-73b8-44d4-b8b8-ff3063fe9d87)
+![Test result](https://github.com/user-attachments/assets/17925a09-01aa-4f0f-9e12-7a9fbc814079)
+
 
